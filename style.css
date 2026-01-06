@@ -1,3 +1,4 @@
+/* ===== GLOBAL STYLES ===== */
 *{
   margin:0;
   padding:0;
@@ -6,19 +7,28 @@
 }
 
 body{
-  background: linear-gradient(135deg,#0f2027,#203a43,#2c5364);
-  color:#fff;
+  background: radial-gradient(circle at top, #1b3c45, #0f2027 60%);
+  color:#ffffff;
   scroll-behavior:smooth;
 }
 
+/* ===== NAVBAR ===== */
 nav{
   display:flex;
   justify-content:space-between;
+  align-items:center;
   padding:20px 60px;
   position:sticky;
   top:0;
   background:rgba(0,0,0,0.3);
   backdrop-filter:blur(10px);
+  z-index:10;
+}
+
+nav h1{
+  font-size:1.6rem;
+  color:#ffffff;
+  font-weight:600;
 }
 
 nav ul{
@@ -31,19 +41,40 @@ nav a{
   color:white;
   text-decoration:none;
   font-weight:500;
+  transition:0.3s;
 }
 
+nav a:hover{
+  color:#00c6ff;
+}
+
+/* ===== HERO SECTION ===== */
 .hero{
-  height:90vh;
+  min-height:90vh;
   display:flex;
   flex-direction:column;
   justify-content:center;
   align-items:center;
   text-align:center;
+  padding:40px;
+}
+
+.hero h2{
+  font-size:3rem;
+  color:#ffffff;
+  text-shadow:1px 1px 4px rgba(0,0,0,0.5);
+  z-index:2;
 }
 
 .hero span{
   color:#00c6ff;
+}
+
+.hero p{
+  margin-top:15px;
+  font-size:1.2rem;
+  color:#dcdcdc;
+  text-shadow:1px 1px 3px rgba(0,0,0,0.4);
 }
 
 .btn{
@@ -54,12 +85,27 @@ nav a{
   border-radius:30px;
   text-decoration:none;
   font-weight:bold;
+  z-index:2;
+  transition:0.3s;
 }
 
+.btn:hover{
+  background:#0099cc;
+  color:#fff;
+}
+
+/* ===== SECTIONS ===== */
 .section{
   padding:80px 60px;
   max-width:900px;
   margin:auto;
+}
+
+.section h2{
+  font-size:2.2rem;
+  margin-bottom:20px;
+  color:#ffffff;
+  text-align:center;
 }
 
 .skills span{
@@ -75,6 +121,11 @@ nav a{
   padding:25px;
   margin:25px 0;
   border-radius:20px;
+  transition:0.3s;
+}
+
+.project-card:hover{
+  background:rgba(0,198,255,0.15);
 }
 
 .project-card a{
@@ -106,15 +157,25 @@ footer{
   transform:none;
 }
 
+/* ===== MEDIA QUERIES ===== */
 @media(max-width:768px){
   nav{
     flex-direction:column;
     align-items:center;
   }
+  
+  .hero h2{
+    font-size:2.2rem;
+  }
+
+  .hero p{
+    font-size:1rem;
+  }
+
+  .section{
+    padding:60px 20px;
+  }
 }
-
-
-
 
 
 
