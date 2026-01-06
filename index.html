@@ -2,57 +2,95 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>AP Web Solutions</title>
+  <title>Anurag Pandey | Frontend Developer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
-  <h1>AP Web Solutions</h1>
-  <p>Professional Web Development Services</p>
-</header>
+  <!-- NAVBAR -->
+  <nav>
+    <h1>Anurag.</h1>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 
-<nav>
-  <a href="#services">Services</a>
-  <a href="#about">About</a>
-  <a href="#contact">Contact</a>
-</nav>
+  <!-- HERO -->
+  <section id="home" class="hero reveal">
+    <h2>Hi, I'm <span>Anurag Pandey</span></h2>
+    <p>BCA Student | Frontend Web Developer</p>
+    <a href="#projects" class="btn">View Projects</a>
+  </section>
 
-<section id="services">
-  <h2>Our Services</h2>
-  <div class="card">
-    <h3>Website Design</h3>
-    <p>Modern and responsive website designs.</p>
-  </div>
-  <div class="card">
-    <h3>Frontend Development</h3>
-    <p>Clean HTML, CSS and JavaScript code.</p>
-  </div>
-  <div class="card">
-    <h3>Website Maintenance</h3>
-    <p>Bug fixing and regular updates.</p>
-  </div>
-</section>
+  <!-- ABOUT -->
+  <section id="about" class="section reveal">
+    <h2>About Me</h2>
+    <p>
+      I am a Bachelor of Computer Applications (BCA) student with a strong
+      interest in frontend web development. I enjoy building clean,
+      responsive and user-friendly web interfaces using HTML, CSS and
+      JavaScript. I am currently looking for internship and learning
+      opportunities to grow as a frontend developer.
+    </p>
+  </section>
 
-<section id="about">
-  <h2>About Us</h2>
-  <p>
-    AP Web Solutions provides affordable and user-friendly
-    websites for small businesses and individuals.
-  </p>
-</section>
+  <!-- SKILLS -->
+  <section id="skills" class="section reveal">
+    <h2>Skills</h2>
+    <div class="skills">
+      <span>HTML5</span>
+      <span>CSS3</span>
+      <span>JavaScript</span>
+      <span>Responsive Design</span>
+      <span>Git & GitHub</span>
+      <span>UI / UX Basics</span>
+    </div>
+  </section>
 
-<section id="contact">
-  <h2>Contact Us</h2>
-  <input type="text" placeholder="Your Name">
-  <input type="email" placeholder="Your Email">
-  <button onclick="send()">Send Message</button>
-</section>
+  <!-- PROJECTS -->
+  <section id="projects" class="section reveal">
+    <h2>Projects</h2>
 
-<footer>
-  <p>© 2026 AP Web Solutions</p>
-</footer>
+    <div class="project-card">
+      <h3>Portfolio Website</h3>
+      <p>Personal portfolio website to showcase skills and projects.</p>
+      <a href="https://anuragpandey12a.github.io/my-Portfolio-website/" target="_blank">Live Demo</a>
+    </div>
 
-<script src="script.js"></script>
+    <div class="project-card">
+      <h3>Task Manager App</h3>
+      <p>Task management web app using HTML, CSS and JavaScript.</p>
+      <a href="https://anuragpandey12a.github.io/Task-Manager-web-app/" target="_blank">Live Demo</a>
+    </div>
+
+    <div class="project-card">
+      <h3>Web Services Website</h3>
+      <p>Modern services website with professional UI design.</p>
+      <a href="https://anuragpandey12a.github.io/web-services-websites/" target="_blank">Live Demo</a>
+    </div>
+
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section reveal">
+    <h2>Contact Me</h2>
+    <p>Email: <a id="emailLink"></a></p>
+
+    <div class="social">
+      <a href="https://github.com/anuragpandey12a" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
+    </div>
+  </section>
+
+  <footer>
+    © 2026 Anurag Pandey | All Rights Reserved
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
